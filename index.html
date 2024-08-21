@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de Texto</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <img src="./imagenes/logo.svg" alt="Logo" class="logo">
+        <h1>Encriptador de Texto</h1>
+    </header>
+    <div class="principal">
+    <div class="container">
+        <div class="input-section">
+            <textarea id="inputText" placeholder="Ingresa el texto aquí"></textarea>
+            <img src="./imagenes/warning.svg" alt="Logo" class="logo2">
+            <div class="alerta">
+            <h2>Solo letras minúsculas y sin acentos</h2>
+            </div>
+            <div class="button-container">
+                <button class="button-en" onclick="encryptText()">Encriptar</button>
+                <button class="button-des" onclick="decryptText()">Desencriptar</button>
+            </div>
+        </div>
+        <div class="output-section">
+            <textarea id="outputText" readonly placeholder="Ningún mensaje fue encontrado, Ingresa el texto que desees encriptar o desencriptar."></textarea>
+            <button class="button-copy" onclick="copyText()">Copiar</button>
+        </div>
+    </div>
+    </div>
+    <footer>
+        <h2>© 2024 Manuel Romo Fajardo</h1>
+    </footer>
+    <script src="scripts.js"></script>
+</body>
+</html>
